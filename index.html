@@ -96,14 +96,13 @@
       <div id="verde" class="color verde right" data-color="verde"></div>
       <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
     </div>
-    <script src="node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
-    <script src="node_modules/sweetalert2/dist/sweetalert2.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
 
-    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js"></script>
+    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " ></script>
 
-<script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " ></script>
+
     <script>
-
 
     const celeste = document.getElementById('celeste')
     const violeta = document.getElementById('violeta')
@@ -111,9 +110,9 @@
     const verde = document.getElementById('verde')
 
     const btnEmpezar = document.getElementById('btnEmpezar')
-    const ULTIMO_NIVEL = 5
+    const ULTIMO_NIVEL = 1000000
 
-   swal('Bienvenido a daniela dice :D!', 'Para empezar, da clic en el botón "Empezar a jugar"')
+   swal('Bienvenido a daniela dice 😀!', 'Para empezar, da clic en el botón "Empezar a jugar"')
 
   class Juego {
     constructor(){
@@ -235,12 +234,12 @@
     }
 
     ganoElJuego(){
-      swal('Daniela dice', 'Felicidades, ganaste!!!', 'success')
+      swal('Daniela dice', 'Felicidades, ganaste 😀!!!', 'success')
       .then(this.inicializar)
     }
 
     perdioElJuego(){
-      swal('Daniela dice', 'Perdiste :(', 'error')
+      swal('Daniela dice', 'lo siento, perdiste ☹️', 'error')
       .then(()=>{
         this.eliminarEventosClick()
         this.inicializar()
@@ -258,7 +257,7 @@
 
       Toast.fire({
         type: 'success',
-        title: 'Pasaste al siguiente nivel'
+        title: 'Pasaste al siguiente nivel 😀'
       })
 
     }
